@@ -59,7 +59,7 @@
   <div class="wrap">
     <div class="eyebrow">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated 22 August 2026</p>
+    <p class="updated">Last updated 4 September 2026</p>
   </div>
 </section>
 
@@ -67,7 +67,7 @@
   <div class="wrap">
 
     <div class="summary">
-      <p><strong>The short version.</strong> ShyBreak keeps your data on your phone. There is no account, no sign-in, and no server that stores what you write. We cannot read your reflections, your ratings, or your progress, because they never reach us.</p>
+      <p><strong>The short version.</strong> ShyBreak keeps your data on your phone. There is no account, no sign-in, and no server that stores what you write. We cannot read your reflections, your ratings, or your progress, because they never reach us. There is exactly one feature that sends anything you said off the device — the voice rehearsal, twice in the life of the app — and it is described in full below.</p>
     </div>
 
     <h2>What stays on your device</h2>
@@ -79,7 +79,12 @@
       <li>Every challenge you complete, how it felt, and any notes you write about what happened</li>
       <li>Your streaks, levels, and XP</li>
     </ul>
+    <p>The challenge library itself ships inside the app. It is not downloaded, not fetched, and not updated over the network — so the app behaves identically offline, and nothing about which level you are on or which challenges you get is ever requested from a server.</p>
     <p>Deleting the app deletes all of it. There is no backup on our side and no way for us to recover it, because we never had it.</p>
+
+    <h3>Your voice</h3>
+    <p>You can speak a note after a challenge instead of typing it. When you do, your iPhone converts the audio to text on the device itself, using Apple's speech recognition. The audio is never saved to a file and never uploaded — it exists in memory for as long as you hold the button and is discarded the moment the words are transcribed. Only the text is kept, and the text stays on your phone like every other note.</p>
+    <p>The app asks for microphone and speech recognition permission the first time you use a voice feature. Declining is fine: everything falls back to the text field and nothing is withheld.</p>
 
     <h2>What leaves your device</h2>
 
@@ -92,8 +97,16 @@
     </ul>
     <p>Your card details go to Apple, never to us. We never see them.</p>
 
-    <h3>Challenge content</h3>
-    <p>The app periodically checks for an updated challenge library. This request downloads a public file and sends nothing about you.</p>
+    <h3>The voice rehearsal</h3>
+    <p>At Level 1 and again at Level 2, you get one practice run at saying a challenge's suggested line out loud before you go and say it for real. Two rehearsals in total, for the life of the app. This is the only feature that sends anything you said off your phone.</p>
+    <p>When you use it, the following is sent to a server we operate on <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare</a> and passed to <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic</a>, which returns one sentence of feedback:</p>
+    <ul>
+      <li>The suggested line you were rehearsing — text we wrote, not you</li>
+      <li>A transcript of what you said out loud during the rehearsal</li>
+      <li>How many seconds you spoke for, and your app's language</li>
+    </ul>
+    <p>The recording itself never leaves your phone; only the transcribed words do. Nothing identifies you: no name, no account, no device identifier, no advertising identifier. We do not store the transcript, and Anthropic does not use it to train models.</p>
+    <p>This does not apply to your reflection notes. What you write or say about how a challenge went stays on your device and is never sent anywhere.</p>
 
     <h3>Links you tap</h3>
     <p>The app links to external pages, such as the National Institute of Mental Health. Tapping one opens your browser and takes you to a site we don't control, with its own privacy policy.</p>
@@ -103,7 +116,8 @@
       <li>No analytics or behavioural tracking</li>
       <li>No advertising and no ad identifiers</li>
       <li>No selling or sharing of data with third parties</li>
-      <li>No access to your contacts, photos, camera, microphone, or location</li>
+      <li>No access to your contacts, photos, camera, or location</li>
+      <li>No background microphone access — the microphone is only live while you are holding the record button, and only if you granted permission</li>
       <li>No accounts, no email collection, no newsletters</li>
     </ul>
 
@@ -112,7 +126,7 @@
 
     <h2>Health information</h2>
     <div class="card">
-      <p>ShyBreak is a practice tool, not a medical service. It does not diagnose or treat any condition. Notes you write about how a challenge went are personal and sensitive, which is exactly why they stay on your device and are never transmitted.</p>
+      <p>ShyBreak is a practice tool, not a medical service. It does not diagnose or treat any condition. Notes you write or speak about how a challenge went are personal and sensitive, which is exactly why they stay on your device and are never transmitted. The voice rehearsal described above is a separate thing: it is you reading a suggested line before a challenge, not you describing how it went.</p>
     </div>
 
     <h2>Children</h2>
